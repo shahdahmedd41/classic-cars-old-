@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Old Money Cars</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Old Money Cars</h1>
+    </header>
+
+    <main class="login-container">
+        <h2>Login to Your Account</h2>
+        <form>
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p class="invite-text">Own a classic car? Log in and join our exclusive collection!</p>
+        <a href="login.html" class="create-account">Create a new account</a>
+    </main>
+    <script>
+        function validateForm() {
+            var username = document.getElementById("username").value.trim();
+            var password = document.getElementById("password").value.trim();
+            
+            if (username == "" || password == "") {
+                alert("Please fill in both fields!");
+                return false;
+            }
+            return true;
+        }
+        </script>
+
+    <footer>
+        <p>© 2025 The Motorwagen</p>
+    </footer>
+
+</body>
+</html>
+
